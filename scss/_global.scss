@@ -1,0 +1,200 @@
+/* Colors */
+$accent-color: #5BACC3;
+$text-color: #393939;
+$bg-color--dark: #FFF0ED;
+$bg-color--light: #f7f7f7;
+$utility-color--white: #fff;
+$utility-color--grey: #909090;
+
+/* Fonts */
+$font-family: 'Open Sans';
+
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+
+$font-3xl: 3.75rem; //60px
+$font-2xl: 2rem; //32px
+$font-xl: 1.5rem; //24px
+$font-l: 1.25rem; //20px
+$font-m: 1.125rem; //18px
+$font-s: 1rem; //16px
+$font-xs: 0.875rem; //14px
+$font-xxs: 0.75rem; //12px
+
+/* Margines & Paddings */
+$size-3xl: 3rem; //48px
+$size-2xl: 2.5rem; //40px
+$size-xl: 2rem; //32px
+$size-l: 1.5rem; //24px
+$size-m: 1.25rem; //20px
+$size-s: 1rem; //16px
+$size-xs: 0.5rem; //8px
+$size-xxs: 0.25rem; //4px
+
+/* Layout */
+@mixin centered-x() {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@mixin section-layout ($width, $bg: $utility-color--white) {
+    width: $width;
+    background-color: $bg;
+}
+
+@mixin nav-list () {
+    display: flex;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+html {
+    font-size: 100%;
+}
+    
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+    display: block;
+    font-family: $font-family;
+    font-weight: $font-regular;
+    @include centered-x();
+}
+
+/* General Components*/
+    .heading1, .heading2 {
+        display: block;
+        font-size: $font-3xl;
+        font-weight: $font-light;
+        margin: 0;
+    }
+
+    .heading1--center, .heading2--center {
+        text-align: center;
+    }
+
+    .heading3 {
+        display: block;
+        font-size: $font-2xl;
+        font-weight: $font-light;
+        margin: 0;
+    }
+
+    .btn {
+        position: relative; 
+
+        @mixin btn-size {
+            width: 180px;
+            height: 63px;
+        }
+
+        &--primary {
+            @include btn-size;
+            padding: $size-m;
+            color: $utility-color--white;
+            font-size: $font-l;
+            text-transform: uppercase;
+            border: 2px solid $text-color;
+            box-sizing: border-box;
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    
+        &--primary:active {
+            @extend .btn--primary; 
+            top: 0px;
+            left: 0px;
+        }
+    
+        &--bg {
+            @include btn-size;
+            border: $size-xxs solid $accent-color;
+            background-color: $accent-color;
+        }
+    
+    }
+
+    
+    @mixin price-tag ($size, $weight) {
+        color: $accent-color;
+        font-size: $size;
+        font-weight: $weight;
+    }
+
+/* Header & Main Navigation */
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: $size-m;
+        background-color: $bg-color--dark;
+
+        &__logo {
+            display: inline-block;
+        }
+
+        &__heading1 {
+            display: inline-block;
+        }
+    
+        &__nav {
+            display: inline-block;
+        }
+    
+        &__nav-list {
+            @include nav-list();
+        }
+    
+        &__nav-item {
+            display: inline;
+            margin-right: $size-xl;
+        }
+    
+        &__nav-link {
+            text-decoration: none;
+            color: $text-color;
+            font-size: $font-xl;
+            font-weight: $font-regular;
+        }
+    
+        &__nav-link--blue {
+            @extend .header__nav-link;
+            color: $accent-color;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

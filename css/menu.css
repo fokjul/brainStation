@@ -1,0 +1,195 @@
+/* Colors */
+/* Fonts */
+/* Margines & Paddings */
+/* Layout */
+html {
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #393939;
+  display: block;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* General Components*/
+.heading1, .heading2 {
+  display: block;
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.heading1--center, .heading2--center {
+  text-align: center;
+}
+
+.heading3 {
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.btn {
+  position: relative;
+}
+.btn--primary, .btn--primary:active {
+  width: 180px;
+  height: 63px;
+  padding: 1.25rem;
+  color: #fff;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border: 2px solid #393939;
+  box-sizing: border-box;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn--primary:active {
+  top: 0px;
+  left: 0px;
+}
+.btn--bg {
+  width: 180px;
+  height: 63px;
+  border: 0.25rem solid #5BACC3;
+  background-color: #5BACC3;
+}
+
+/* Header & Main Navigation */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.25rem;
+  background-color: #FFF0ED;
+}
+.header__logo {
+  display: inline-block;
+}
+.header__heading1 {
+  display: inline-block;
+}
+.header__nav {
+  display: inline-block;
+}
+.header__nav-list {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.header__nav-item {
+  display: inline;
+  margin-right: 2rem;
+}
+.header__nav-link, .header__nav-link--blue {
+  text-decoration: none;
+  color: #393939;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.header__nav-link--blue {
+  color: #5BACC3;
+}
+
+/* Page Navigation */
+.page-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #393939;
+  height: 100%;
+  text-align: center;
+  padding: 1.5rem;
+}
+.page-nav__list {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.page-nav__item {
+  border-left: 4px solid #5BACC3;
+  margin-right: 1.25rem;
+  padding-left: 1.25rem;
+  display: inline;
+}
+.page-nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/images/coffee-circle.jpg");
+}
+.hero__title-wrapper {
+  width: 300px;
+  height: 200px;
+  background-color: #393939;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+.hero__title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  border: 0.25rem solid #5BACC3;
+  position: absolute;
+  top: -16px;
+  left: -16px;
+}
+.hero__heading1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Menu Card */
+.menu, .menu--bg-pink, .menu--bg-lightGrey {
+  display: block;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.menu--bg-lightGrey {
+  background-color: #f7f7f7;
+}
+.menu--bg-pink {
+  background-color: #FFF0ED;
+}
+
+.menu-card {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  width: 35%;
+  max-width: 500px;
+  padding: 2rem 0;
+}
+.menu-card__copy {
+  font-style: italic;
+}
+.menu-card__price {
+  color: #5BACC3;
+  font-size: 1.25rem;
+  font-weight: 400;
+}

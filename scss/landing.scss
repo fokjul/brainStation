@@ -1,0 +1,261 @@
+@use 'global';
+
+/* Hero Section */
+    .hero {
+        @include global.section-layout (100%, global.$bg-color--dark);
+
+        &__container {
+            text-align: start; 
+            @include global.section-layout (80%, global.$bg-color--dark);
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: global.$size-xl;
+        }
+
+        &__text-block {
+            display: inline-block;
+            vertical-align: 200px;
+            width: 48%;
+            margin-right: 2%;
+        }
+
+        &__copy {
+            width: 375px;
+            margin-top: global.$size-m;
+            margin-bottom: global.$size-m;
+        }
+
+        &__btn-container {
+            position: relative;
+            
+        }
+
+        &__img {
+            padding-left: 15%;
+            width: auto;
+            max-width: 48%;
+        }
+    }
+
+/* Product Section */ 
+    .product {
+        width: 100%;
+        background-color: global.$bg-color--light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: global.$size-3xl;
+        padding-bottom: global.$size-3xl;
+
+        &__list {
+            display: flex;
+            margin: global.$size-m auto;
+        }
+
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 330px;
+            height: 440px;
+            text-align: center;
+            border-radius: global.$size-xs;
+            margin: global.$size-m;
+            box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+            background-color: global.$utility-color--white;
+        }
+
+        &__img {
+            height: 280px;
+            padding: global.$size-m 0;
+        }
+
+        &__card-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: global.$bg-color--dark;
+            padding: global.$size-xl global.$size-m;
+            border-radius: 0 0 global.$size-xs global.$size-xs;
+        }
+
+        &__name {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__qty {
+            display: flex;
+            color: #909090;
+        }
+
+        &__price {
+            @include global.price-tag (global.$font-xl, global.$font-bold);
+        }
+
+        &__btn-container {
+            position: relative; 
+        }
+
+        
+    }
+
+/* Description Section */
+.description {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem auto;
+    padding: global.$size-m;
+    max-width: 1200px;
+
+    &__container {
+        max-width: 450px;
+        gap: global.$size-xl;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__icon {
+        width: 50px;
+    }
+
+    &__img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        height: 450px;
+        background-image: url("/assets/images/coldbrewbackground.png");
+        background-size: cover;
+        position: relative;
+    }
+
+    &__img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        height: 450px;
+        border: global.$size-xxs solid global.$accent-color;
+        position: absolute;
+        top: -16px;
+        left: -16px;
+    }
+
+    &__img {
+        height: 280px;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        } to {
+            transform: rotate(360deg);
+        }
+    }
+
+    &__img:hover {
+        animation: spin 3s linear infinite;
+    }
+
+
+}
+
+/* Discount Section */
+    @keyframes bg-flash {
+        0% {
+            background-color: global.$text-color;
+        } 
+        
+        50% {
+            background-color: global.$accent-color;
+        }
+
+        100% {
+            background-color: global.$text-color;
+        }
+    }
+
+    .discount {
+        animation: bg-flash 5s ease-in-out infinite;
+        @include global.section-layout(80%, global.$text-color);
+        display: flex;
+        justify-content: center;
+        margin: calc(global.$size-3xl * 3) auto;
+        padding: global.$size-m;
+
+        &__copy {
+            color: global.$utility-color--white;
+            font-size: calc(global.$font-2xl + global.$font-xs);
+            text-align: center; 
+        }
+    
+        &__copy--span {
+            font-weight: global.$font-bold;
+        }
+    }
+
+/* Footer */
+
+.footer {
+    display: block;
+    text-align: center;
+    background-color: global.$bg-color--dark;
+    position: relative;
+    overflow: hidden;
+
+   &__bg-img {
+    width: 120px;
+    opacity: 25%;
+   } 
+
+   &__bg-img--left {
+    position: absolute;
+    top: 16px;
+    left: -32px;
+   } 
+
+   &__bg-img--right {
+    position: absolute;
+    bottom: 16px;
+    right: -32px;
+   } 
+    
+   &__copy {
+        display: inline-block;
+        text-align: start;
+        vertical-align: top;
+        margin: global.$size-m;
+        padding: global.$size-xl global.$size-m;
+    }
+
+    &__header {
+        display: block;
+        margin-bottom: global.$size-m;
+    }
+
+    &__address {
+        font-style: normal;
+        font-size: global.$font-m;
+        font-weight: global.$font-regular;
+    }
+
+    &__icon {
+        width: 50px;
+    }
+
+    &__copy--bold {
+        font-weight: global.$font-bold;
+    }
+}
+
