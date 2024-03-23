@@ -65,8 +65,8 @@ body {
 .btn--bg {
   width: 180px;
   height: 63px;
-  border: 0.25rem solid red;
-  background-color: red;
+  border: 0.25rem solid #5BACC3;
+  background-color: #5BACC3;
 }
 
 /* Header & Main Navigation */
@@ -102,7 +102,7 @@ body {
   font-weight: 400;
 }
 .header__nav-link--blue {
-  color: red;
+  color: #5BACC3;
 }
 
 /* Page Navigation */
@@ -121,7 +121,7 @@ body {
   text-transform: uppercase;
 }
 .page-nav__item {
-  border-left: 4px solid red;
+  border-left: 4px solid #5BACC3;
   margin-right: 1.25rem;
   padding-left: 1.25rem;
   display: inline;
@@ -154,7 +154,7 @@ body {
   align-items: center;
   width: 300px;
   height: 200px;
-  border: 0.25rem solid red;
+  border: 0.25rem solid #5BACC3;
   position: absolute;
   top: -16px;
   left: -16px;
@@ -189,7 +189,7 @@ body {
   font-style: italic;
 }
 .menu-card__price {
-  color: red;
+  color: #5BACC3;
   font-size: 1.25rem;
   font-weight: 400;
 }
