@@ -33,6 +33,9 @@ $size-xs: 0.5rem; //8px
 $size-xxs: 0.25rem; //4px
 
 /* Layout */
+
+$max-width--section: 80rem; //1280px
+
 @mixin centered-x() {
     margin-right: auto;
     margin-left: auto;
@@ -51,9 +54,6 @@ $size-xxs: 0.25rem; //4px
 
 html {
     font-size: 100%;
-}
-    
-* {
     box-sizing: border-box;
 }
 
@@ -90,8 +90,8 @@ body {
         position: relative; 
 
         @mixin btn-size {
-            width: 180px;
-            height: 63px;
+            width: 11.25rem; //180px;
+            height: 3.9rem; //63px;
         }
 
         &--primary {
@@ -100,24 +100,23 @@ body {
             color: $utility-color--white;
             font-size: $font-l;
             text-transform: uppercase;
-            border: 2px solid $text-color;
+            border: calc($size-xxs / 2) solid $text-color;
             box-sizing: border-box;
             position: absolute;
-            top: -4px;
-            left: -4px;
+            top: $size-xxs*-1;
+            left: $size-xxs*-1;
             background-color: transparent;
             cursor: pointer;
         }
     
         &--primary:active {
             @extend .btn--primary; 
-            top: 0px;
-            left: 0px;
+            top: 0;
+            left: 0;
         }
     
         &--bg {
             @include btn-size;
-            border: $size-xxs solid $accent-color;
             background-color: $accent-color;
         }
     

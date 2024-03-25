@@ -4,9 +4,6 @@
 /* Layout */
 html {
   font-size: 100%;
-}
-
-* {
   box-sizing: border-box;
 }
 
@@ -44,28 +41,27 @@ body {
   position: relative;
 }
 .btn--primary, .btn--primary:active {
-  width: 180px;
-  height: 63px;
+  width: 11.25rem;
+  height: 3.9rem;
   padding: 1.25rem;
   color: #fff;
   font-size: 1.25rem;
   text-transform: uppercase;
-  border: 2px solid #393939;
+  border: 0.125rem solid #393939;
   box-sizing: border-box;
   position: absolute;
-  top: -4px;
-  left: -4px;
+  top: -0.25rem;
+  left: -0.25rem;
   background-color: transparent;
   cursor: pointer;
 }
 .btn--primary:active {
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
 .btn--bg {
-  width: 180px;
-  height: 63px;
-  border: 0.25rem solid #5BACC3;
+  width: 11.25rem;
+  height: 3.9rem;
   background-color: #5BACC3;
 }
 
@@ -121,7 +117,7 @@ body {
   text-transform: uppercase;
 }
 .page-nav__item {
-  border-left: 4px solid #5BACC3;
+  border-left: 0.25rem solid #5BACC3;
   margin-right: 1.25rem;
   padding-left: 1.25rem;
   display: inline;
@@ -135,14 +131,14 @@ body {
 .hero {
   display: flex;
   width: 100%;
-  height: 700px;
+  height: 43.75rem;
   background-position: center;
   background-size: cover;
   background-image: url("../assets/images/coffee-circle.jpg");
 }
 .hero__title-wrapper {
-  width: 300px;
-  height: 200px;
+  width: 18.75rem;
+  height: 12.5rem;
   background-color: #393939;
   text-align: center;
   margin: auto;
@@ -152,12 +148,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   border: 0.25rem solid #5BACC3;
   position: absolute;
-  top: -16px;
-  left: -16px;
+  top: -1rem;
+  left: -1rem;
 }
 .hero__heading1 {
   color: #fff;
@@ -182,7 +178,7 @@ body {
   text-align: center;
   margin: 0 auto;
   width: 35%;
-  max-width: 500px;
+  max-width: 31.25rem;
   padding: 2rem 0;
 }
 .menu-card__copy {

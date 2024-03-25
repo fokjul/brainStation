@@ -7,20 +7,20 @@
         &__container {
             text-align: start; 
             @include global.section-layout (80%, global.$bg-color--dark);
-            max-width: 1280px;
+            max-width: 80rem; //1280px
             margin: 0 auto;
             padding: global.$size-xl;
         }
 
         &__text-block {
             display: inline-block;
-            vertical-align: 200px;
+            vertical-align: 12.5rem; //200px
             width: 48%;
             margin-right: 2%;
         }
 
         &__copy {
-            width: 375px;
+            width: 23.5rem; //375px
             margin-top: global.$size-m;
             margin-bottom: global.$size-m;
         }
@@ -56,17 +56,16 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 330px;
-            height: 440px;
+            width: 20.625rem; //330px;
             text-align: center;
             border-radius: global.$size-xs;
             margin: global.$size-m;
-            box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0.3125rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.25);
             background-color: global.$utility-color--white;
         }
 
         &__img {
-            height: 280px;
+            max-height: 17.5rem; //280px;
             padding: global.$size-m 0;
         }
 
@@ -87,7 +86,7 @@
 
         &__qty {
             display: flex;
-            color: #909090;
+            color: global.$utility-color--grey;
         }
 
         &__price {
@@ -97,22 +96,20 @@
         &__btn-container {
             position: relative; 
         }
-
-        
     }
 
 /* Description Section */
 .description {
-    width: 80%;
+    @include global.section-layout (80%, global.$utility-color--white);
+    max-width: global.$max-width--section; //1280px
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10rem auto;
     padding: global.$size-m;
-    max-width: 1200px;
 
     &__container {
-        max-width: 450px;
+        max-width: 28.125rem; //450px;
         gap: global.$size-xl;
         display: flex;
         flex-direction: column;
@@ -126,15 +123,15 @@
     }
 
     &__icon {
-        width: 50px;
+        width: 3.125rem; //50px;
     }
 
     &__img-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 450px;
-        height: 450px;
+        width: 28.125rem; //450px;
+        height: 28.125rem; //450px;
         background-image: url("/assets/images/coldbrewbackground.png");
         background-size: cover;
         position: relative;
@@ -144,16 +141,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 450px;
-        height: 450px;
+        width: 100%;
+        height: 100%;
         border: global.$size-xxs solid global.$accent-color;
         position: absolute;
-        top: -16px;
-        left: -16px;
+        top: global.$size-s*-1; //-16px;
+        left: global.$size-s*-1; //-16px;
     }
 
     &__img {
-        height: 280px;
+        height: 17.5rem; //280px;
     }
 
     @keyframes spin {
@@ -215,20 +212,20 @@
     overflow: hidden;
 
    &__bg-img {
-    width: 120px;
+    width: 7.5rem; //120px;
     opacity: 25%;
    } 
 
    &__bg-img--left {
     position: absolute;
-    top: 16px;
-    left: -32px;
+    top: global.$size-s; //16px
+    left: global.$size-2xl*-1; //-32px;
    } 
 
    &__bg-img--right {
     position: absolute;
-    bottom: 16px;
-    right: -32px;
+    bottom: global.$size-s; //16px
+    right: global.$size-2xl*-1; //-32px;
    } 
     
    &__copy {
@@ -251,7 +248,7 @@
     }
 
     &__icon {
-        width: 50px;
+        width: 3.125rem; //50px;
     }
 
     &__copy--bold {

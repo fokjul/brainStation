@@ -4,9 +4,6 @@
 /* Layout */
 html {
   font-size: 100%;
-}
-
-* {
   box-sizing: border-box;
 }
 
@@ -44,28 +41,27 @@ body {
   position: relative;
 }
 .btn--primary, .btn--primary:active {
-  width: 180px;
-  height: 63px;
+  width: 11.25rem;
+  height: 3.9rem;
   padding: 1.25rem;
   color: #fff;
   font-size: 1.25rem;
   text-transform: uppercase;
-  border: 2px solid #393939;
+  border: 0.125rem solid #393939;
   box-sizing: border-box;
   position: absolute;
-  top: -4px;
-  left: -4px;
+  top: -0.25rem;
+  left: -0.25rem;
   background-color: transparent;
   cursor: pointer;
 }
 .btn--primary:active {
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
 .btn--bg {
-  width: 180px;
-  height: 63px;
-  border: 0.25rem solid #5BACC3;
+  width: 11.25rem;
+  height: 3.9rem;
   background-color: #5BACC3;
 }
 
@@ -114,18 +110,18 @@ body {
   text-align: start;
   width: 80%;
   background-color: #FFF0ED;
-  max-width: 1280px;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 2rem;
 }
 .hero__text-block {
   display: inline-block;
-  vertical-align: 200px;
+  vertical-align: 12.5rem;
   width: 48%;
   margin-right: 2%;
 }
 .hero__copy {
-  width: 375px;
+  width: 23.5rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
@@ -156,16 +152,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 330px;
-  height: 440px;
+  width: 20.625rem;
   text-align: center;
   border-radius: 0.5rem;
   margin: 1.25rem;
-  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.3125rem 0.5625rem -0.0625rem rgba(0, 0, 0, 0.25);
   background-color: #fff;
 }
 .product__img {
-  height: 280px;
+  max-height: 17.5rem;
   padding: 1.25rem 0;
 }
 .product__card-container {
@@ -197,15 +192,16 @@ body {
 /* Description Section */
 .description {
   width: 80%;
+  background-color: #fff;
+  max-width: 80rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10rem auto;
   padding: 1.25rem;
-  max-width: 1200px;
 }
 .description__container {
-  max-width: 450px;
+  max-width: 28.125rem;
   gap: 2rem;
   display: flex;
   flex-direction: column;
@@ -217,14 +213,14 @@ body {
   width: 100%;
 }
 .description__icon {
-  width: 50px;
+  width: 3.125rem;
 }
 .description__img-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
-  height: 450px;
+  width: 28.125rem;
+  height: 28.125rem;
   background-image: url("/assets/images/coldbrewbackground.png");
   background-size: cover;
   position: relative;
@@ -233,15 +229,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 450px;
-  height: 450px;
+  width: 100%;
+  height: 100%;
   border: 0.25rem solid #5BACC3;
   position: absolute;
-  top: -16px;
-  left: -16px;
+  top: -1rem;
+  left: -1rem;
 }
 .description__img {
-  height: 280px;
+  height: 17.5rem;
 }
 @keyframes spin {
   from {
@@ -294,18 +290,18 @@ body {
   overflow: hidden;
 }
 .footer__bg-img {
-  width: 120px;
+  width: 7.5rem;
   opacity: 25%;
 }
 .footer__bg-img--left {
   position: absolute;
-  top: 16px;
-  left: -32px;
+  top: 1rem;
+  left: -2.5rem;
 }
 .footer__bg-img--right {
   position: absolute;
-  bottom: 16px;
-  right: -32px;
+  bottom: 1rem;
+  right: -2.5rem;
 }
 .footer__copy {
   display: inline-block;
@@ -324,7 +320,7 @@ body {
   font-weight: 400;
 }
 .footer__icon {
-  width: 50px;
+  width: 3.125rem;
 }
 .footer__copy--bold {
   font-weight: 700;
